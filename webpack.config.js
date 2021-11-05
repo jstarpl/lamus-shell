@@ -1,6 +1,8 @@
 const lodash = require('lodash');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
+const LiveReloadPlugin = require('webpack-livereload-plugin');
 const path = require('path');
 
 function srcPaths(src) {
@@ -39,7 +41,7 @@ const commonConfig = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(jpg|png|svg|ico|icns)$/,
+        test: /\.(jpg|png|svg|ico|icns|ttf|otf)$/,
         loader: 'file-loader',
         options: {
           name: '[path][name].[ext]',
@@ -86,6 +88,16 @@ rendererConfig.plugins = [
   new HtmlWebpackPlugin({
     template: path.resolve(__dirname, './public/index.html'),
   }),
+  new MonacoWebpackPlugin({
+    // available options are documented at https://github.com/Microsoft/monaco-editor-webpack-plugin#options
+    languages: ['json'],
+  }),
+  new LiveReloadPlugin({
+    protocol: 'http',
+    hostname: 'localhost',
+    appendScriptTag: true,
+    delay: 250,
+  })
 ];
 
 module.exports = [mainConfig, rendererConfig];

@@ -1,0 +1,19 @@
+ul.tab-list {
+	--tab-list-border-width: 2px;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+ul.tab-list li {
+	display: inline-flex;
+	padding: 0;
+	margin: 0;
+	border-right: var(--tab-list-border-width) solid var(--app-button-background);
+	border-bottom: var(--tab-list-border-width) solid var(--app-button-background);
+}
+
+ul.tab-list li.selected {
+	background: var(--app-tab-background);
+	border-bottom-color: transparent;
+}

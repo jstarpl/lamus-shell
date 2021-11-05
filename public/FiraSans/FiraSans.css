@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 100;
+	font-style: normal;
+	src: url(FiraSans-Thin.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 100;
+	font-style: italic;
+	src: url(FiraSans-ThinItalic.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 200;
+	font-style: normal;
+	src: url(FiraSans-ExtraLight.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 200;
+	font-style: italic;
+	src: url(FiraSans-ExtraLightItalic.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 300;
+	font-style: normal;
+	src: url(FiraSans-Light.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 300;
+	font-style: italic;
+	src: url(FiraSans-LightItalic.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 400;
+	font-style: normal;
+	src: url(FiraSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 400;
+	font-style: italic;
+	src: url(FiraSans-Italic.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 500;
+	font-style: normal;
+	src: url(FiraSans-Medium.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 500;
+	font-style: italic;
+	src: url(FiraSans-MediumItalic.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 600;
+	font-style: normal;
+	src: url(FiraSans-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 600;
+	font-style: italic;
+	src: url(FiraSans-SemiBoldItalic.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 700;
+	font-style: normal;
+	src: url(FiraSans-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 700;
+	font-style: italic;
+	src: url(FiraSans-BoldItalic.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 800;
+	font-style: normal;
+	src: url(FiraSans-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 800;
+	font-style: italic;
+	src: url(FiraSans-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 900;
+	font-style: normal;
+	src: url(FiraSans-Black.ttf);
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	font-weight: 900;
+	font-style: italic;
+	src: url(FiraSans-BlackItalic.ttf);
+}

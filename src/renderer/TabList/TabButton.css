@@ -1,0 +1,10 @@
+ul.tab-list li button {
+	background: none;
+	border-radius: 0;
+	font-weight: 400;
+	margin: 0.15em 0.5em;
+}
+
+ul.tab-list li button:focus {
+	box-shadow: none;
+}

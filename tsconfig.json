@@ -16,6 +16,8 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
     "sourceMap": true,
     "target": "esnext"
   },
