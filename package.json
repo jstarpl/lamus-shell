@@ -90,5 +90,11 @@
   "bugs": {
     "url": "https://github.com/jstarpl/lamus-shell/issues"
   },
-  "homepage": "https://github.com/jstarpl/lamus-shell#readme"
+  "homepage": "https://github.com/jstarpl/lamus-shell#readme",
+  "prettier": {
+    "endOfLine": "crlf",
+    "trailingComma": "es5",
+    "semi": false,
+    "useTabs": true
+  }
 }

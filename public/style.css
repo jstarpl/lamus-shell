@@ -1,42 +1,46 @@
 @import url(FiraSans/FiraSans.css);
 
 :root {
-  --app-screen-background: #282c34;
-  --app-button-background: #404754;
-  --app-button-background-active: #515a6a;
-  --app-screen-foreground: #abb2bf;
-  --app-input-background: #1d1f23;
-  --app-badge-background: #4d78cc;
-  --app-badge-foreground: #f8fafd;
-  --app-focus-outline: #4d78cc;
+	--app-screen-background: #282c34;
+	--app-button-background: #404754;
+	--app-button-background-active: #515a6a;
+	--app-screen-foreground: #abb2bf;
+	--app-input-background: #1d1f23;
+	--app-badge-background: #4d78cc;
+	--app-badge-foreground: #f8fafd;
+	--app-focus-outline: #4d78cc;
 
-  --app-tab-background: #14161a;
+	--app-tab-background: #14161a;
 
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 300;
-  font-size: 2vh;
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 300;
+	font-size: 3vh;
 }
 
 body {
-  background: var(--app-screen-background);
-  color: var(--app-screen-foreground);
-  margin: 0;
+	background: var(--app-screen-background);
+	color: var(--app-screen-foreground);
+	margin: 0;
 }
 
 :focus {
-  outline: none;
-  box-shadow: 0 0 0 0.3em var(--app-focus-outline);
+	outline: none;
+	box-shadow: 0 0 0 0.3em var(--app-focus-outline);
+}
+
+.inputarea.monaco-mouse-cursor-text:focus {
+	box-shadow: none;
 }
 
 button {
-  background: var(--app-button-background);
-  color: inherit;
-  border: none;
-  border-radius: 0.2em;
-  font-size: 1rem;
-  font-family: inherit;
+	background: var(--app-button-background);
+	color: inherit;
+	border: none;
+	border-radius: 0.2em;
+	font-size: 1rem;
+	font-family: inherit;
 }
 
 button:active {
-  background: var(--app-button-background-active);
+	background: var(--app-button-background-active);
 }

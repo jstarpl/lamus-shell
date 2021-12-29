@@ -1,0 +1,12 @@
+.tab-contents-area {
+	flex: 1 1;
+	position: relative;
+}
+
+.tab-contents {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}

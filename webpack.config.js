@@ -88,10 +88,10 @@ rendererConfig.plugins = [
   new HtmlWebpackPlugin({
     template: path.resolve(__dirname, './public/index.html'),
   }),
-  new MonacoWebpackPlugin({
-    // available options are documented at https://github.com/Microsoft/monaco-editor-webpack-plugin#options
-    languages: ['json'],
-  }),
+  // new MonacoWebpackPlugin({
+  //   // available options are documented at https://github.com/Microsoft/monaco-editor-webpack-plugin#options
+  //   languages: ['json', 'html', 'ini', 'typescript', 'javascript'],
+  // }),
   new LiveReloadPlugin({
     protocol: 'http',
     hostname: 'localhost',

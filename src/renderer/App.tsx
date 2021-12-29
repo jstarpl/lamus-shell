@@ -1,18 +1,15 @@
-import React, {useEffect} from 'react'
-import { TabList } from './TabList/TabList'
+import React, { useEffect } from "react"
+import "./App.css"
+import { AppTabs } from "./AppTabs/AppTabs"
 
 export function App() {
 	useEffect(() => {
-		document.body.classList.add('shell')
+		document.body.classList.add("shell")
 
 		return () => {
-			document.body.classList.remove('shell')
+			document.body.classList.remove("shell")
 		}
 	})
 
-	return (
-		<div className="app">
-			<TabList />
-		</div>
-	)
+	return <AppTabs />
 }
