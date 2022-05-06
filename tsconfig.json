@@ -19,7 +19,7 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "sourceMap": true,
-    "target": "esnext"
+    "target": "ESNext"
   },
   "exclude": ["node_modules"]
 }

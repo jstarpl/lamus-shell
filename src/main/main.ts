@@ -23,6 +23,13 @@ function createWindow(): void {
 		},
 	})
 
+	if (process.env.NODE_ENV !== 'production') {
+		mainWindow.webContents.openDevTools({
+			mode: "detach",
+			activate: true,
+		})
+	}
+
 	// and load the index.html of the app.
 	mainWindow
 		.loadURL(
@@ -67,7 +74,8 @@ protocol.registerSchemesAsPrivileged([
 app.whenReady().then(() => {
 	protocol.registerFileProtocol("lamus", (request, callback) => {
 		const url = request.url.substring(8, request.url.length - 1)
-		callback({ path: path.normalize(`${__dirname}/${url}`) })
+		const actualPath = path.normalize(`${__dirname}/public/${url}`)
+		callback({ path: actualPath })
 	})
 	createWindow()
 })

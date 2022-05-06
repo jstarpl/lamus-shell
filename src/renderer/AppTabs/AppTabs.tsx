@@ -4,6 +4,7 @@ import "./AppTabs.css"
 import { CodeEditor } from "../CodeEditor/CodeEditor"
 import { TabList } from "../TabList/TabList"
 import { BrowserView } from "./BrowserView"
+import { ComponentView } from "./ComponentView"
 
 interface IProps {}
 
@@ -25,9 +26,12 @@ export function AppTabs(props: IProps) {
 			<div className="tab-contents-area">
 				<BrowserView
 					className="tab-contents"
-					visible={selectedTab === "code"}
+					visible={selectedTab === "home"}
 					url={"lamus://test.html"}
 				/>
+				<div className="tab-contents">
+					<CodeEditor />
+				</div>
 			</div>
 		</>
 	)

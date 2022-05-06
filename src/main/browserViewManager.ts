@@ -91,4 +91,11 @@ export function browserViewManager(win: BrowserWindow) {
 			}
 		}
 	)
+
+	win.webContents.on('did-start-navigation', () => {
+		Object.entries(browserViews).forEach(([id, view]) => {
+			destroyBrowserView(view, win)
+			delete browserViews[id]
+		})
+	})
 }
