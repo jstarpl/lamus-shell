@@ -10,7 +10,7 @@ import { literal } from "_/lib/utils"
 import {
 	BrowserViewEventArgs,
 	BrowserViewEvents,
-} from "_/lib/BrowserViewEventArgs"
+} from "_/model/BrowserViewEventArgs"
 
 interface IProps {
 	url: string

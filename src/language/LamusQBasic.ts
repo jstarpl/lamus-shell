@@ -16,8 +16,8 @@ export default {
 			},
 			indentationRules: {
 				increaseIndentPattern:
-					/^SUB\s.*|^FUNCTION\s.*|^WHILE\s.*|DO$|THEN$|\s*ELSE\s+|^\s*FOR\s.*\sTO\s|^\s*CASE|^\s*TYPE|^(\w)+:$/gi,
-				decreaseIndentPattern: /^\s*END\s+|^\s*RETURN|^\s*LOOP\s+$/gi,
+					/^SUB\s.*|^FUNCTION\s.*|^\s*WHILE\s.*|DO$|THEN$|\s*ELSE\s+|^\s*FOR\s.*\sTO\s|^\s*CASE|^\s*TYPE|^(\w)+:$/gi,
+				decreaseIndentPattern: /^\s*END\s+|^\s*RETURN|^\s*LOOP\s+$|^\s*NEXT\s+$|^\s*WEND\s+$/gi,
 			},
 		}
 	},
@@ -237,4 +237,15 @@ export default {
 			},
 		}
 	},
+	/* signatureHelpProvider(): languages.SignatureHelpProvider {
+		return {
+			provideSignatureHelp(model, position, token, context) {
+				return {
+					value: {
+
+					}
+				}
+			}
+		}
+	} */
 }

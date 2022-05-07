@@ -2,7 +2,7 @@ import { BrowserView, BrowserWindow, ipcMain } from "electron"
 import {
 	BrowserViewEventArgs,
 	BrowserViewEvents,
-} from "_/lib/BrowserViewEventArgs"
+} from "_/model/BrowserViewEventArgs"
 
 interface IWrappedBrowserView {
 	view: BrowserView | null
